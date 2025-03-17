@@ -1,0 +1,48 @@
+body
+{
+    font-family: Arial, sans-serif ;
+    margin: 0 ;
+    background-color: #f8f9fa ;
+}
+.about-us
+{
+    background: linear-gradient(180deg,#000F30 10.17%,#002065 36.17%,#0032A1 53.67%, #8099D0 81.17%,#FFFF 100%);
+   color :white ;
+   padding: 100px 30px ;
+   text-align:center ;
+}
+.about-us-container
+{
+    max-width: 890px;
+    margin: 0 auto ;
+    padding: 20px ;
+}
+.about-us-container h2
+{
+    font-size: 50px ;
+    margin-bottom: 20px ;
+
+}
+.about-us-container p
+{
+    font-size:18px;
+    line-height: 1.6 ;
+    margin-top:30px;
+}
+.about-us-content {
+    padding: 20px;
+    margin: 0 auto ;
+}
+
+
+
+.about-us-text{
+    text-align:left ;
+    padding-right :30px ; 
+    
+}
+.about-us-text h3
+{
+    font-size:30px ;
+    margin-top:20px ;
+}

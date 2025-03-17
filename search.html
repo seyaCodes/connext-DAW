@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connext - Search</title>
+    <link rel="stylesheet" href="search.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container header-container">
+        <div class="logo-container">
+          <img src="images/logo.png" alt="Connext Logo" class="logo" />
+          <h1>con'next</h1>
+        </div>
+
+        <div class="user-controls">
+          <!-- Profile Picture -->
+          <div class="user-avatar">
+            <img src="images/user.jpg" alt="User Avatar" />
+          </div>
+
+          <!-- Button to startup.html -->
+          <a href="startup.html" class="startup-button">Go to Profile</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <div class="search-container">
+          <h1 class="search-title">Find Investment Opportunities</h1>
+
+          <!-- Search filters -->
+          <div class="search-filters">
+            <div class="filter-group">
+              <label>Company stage</label>
+              <select>
+                <option>All stages</option>
+                <option>Seed</option>
+                <option>Series A</option>
+                <option>Series B</option>
+                <option>Growth</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label>Company HQ</label>
+              <select>
+                <option>All locations</option>
+                <option>North America</option>
+                <option>Europe</option>
+                <option>Asia</option>
+                <option>Africa</option>
+                <option>South America</option>
+                <option>Australia</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label>Round size</label>
+              <select>
+                <option>Any</option>
+                <option>$100k - $500k</option>
+                <option>$500k - $1M</option>
+                <option>$1M - $5M</option>
+                <option>$5M+</option>
+              </select>
+            </div>
+
+            <button class="clear-filters">Clear filters</button>
+          </div>
+
+          <!-- Search bar -->
+          <div class="search-bar">
+            <input type="text" placeholder="SaaS, fintech, marketplace..." />
+            <button class="search-button">
+              <i class="fas fa-search"></i> Search
+            </button>
+          </div>
+
+          <!-- Empty State Message -->
+          <div class="empty-state">
+            <p class="empty-message">No users yet, it's empty.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+ <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Branding Section -->
+    <div class="footer-branding">
+      <div class="logo-container">
+        <img src="images/logo.png" alt="Logo">
+        <span class="logo-name">con'next</span>
+      </div>
+      <p class="footer-tagline">Connecting next opportunities with next investments</p>
+      <div class="social-icons">
+        <a href="https://facebook.com" class="social-icon"><img src="images/Component 1 (4).png" alt="Facebook"></a>
+        <a href="https://twitter.com" class="social-icon"><img src="images/Component 1 (5).png" alt="Twitter"></a>
+        <a href="https://linkedin.com" class="social-icon"><img src="images/Component 1 (6).png" alt="LinkedIn"></a>
+      </div>
+    </div>
+    
+    <!-- Navigation Links -->
+    <div class="footer-links">
+      <!-- Investors Column -->
+      <div class="footer-column">
+        <h3 class="footer-heading">for Investors</h3>
+        <nav class="footer-nav">
+          <a href="investors/why-invest.html">Why invest</a>
+          <a href="investors/how-it-works.html">How it works</a>
+          <a href="investors/faq.html">FAQ</a>
+          <a href="investors/risks.html">Risks</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+        </nav>
+      </div>
+      
+      <!-- Startups Column -->
+      <div class="footer-column">
+        <h3 class="footer-heading">for Startups</h3>
+        <nav class="footer-nav">
+          <a href="startups/guide.html">Guide</a>
+          <a href="startups/faq.html">FAQ</a>
+          <a href="startups/risks.html">Risks</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+        </nav>
+      </div>
+      
+      <!-- Company Column -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Company</h3>
+        <nav class="footer-nav">
+          <a href="company/about.html">About</a>
+          <a href="company/terms-risks.html">Terms & Risks</a>
+          <a href="help.html">Help</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>

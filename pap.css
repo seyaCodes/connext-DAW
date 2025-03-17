@@ -1,0 +1,28 @@
+body{
+    font-family:Arial,sans-serif;
+    background : linear-gradient(180deg,#000F30 10.17%,#002065 36.17%,#0032A1 53.67%, #8099D0 81.17%,#FFFF 100%);
+    color: white;
+    text-align: left ;
+    margin:0 ;
+    padding :20px ;
+}   
+
+.Privacy-and-Policy-container{
+    max-width :800px;
+    margin: auto;
+    padding:20px;
+}
+.Privacy-and-Policy-container h1{
+    font-weight: bold ;
+    font-size: 50px ;
+    color: #ffffff;
+}
+.Privacy-and-Policy-container h2 {
+    font-weight: bold ;
+    text-align: left ;
+}
+.Privacy-and-Policy-container p{
+    font-size: 16px; 
+    line-height: 1.6 ;
+
+}

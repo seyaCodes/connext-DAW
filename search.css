@@ -1,0 +1,395 @@
+/* Global styles */
+:root {
+  --primary-color: #1a61b7; /* Blue */
+  --secondary-color: #051c42; /* Navy blue */
+  --background-color: #0a255a; /* Dark blue */
+  --text-color: #ffffff; /* White */
+  --border-color: #1a1a1a; /* Darker border */
+  --hover-color: #2d4a88;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Darker Header */
+.main-header {
+  background-color: #03112f; /* Darker Navy Blue */
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-container h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+}
+
+/* Right Side Controls */
+.user-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Profile Picture */
+.user-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #051c42;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu-icon:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #0a255a;
+}
+
+/* Button to Startup Page */
+.startup-button {
+  padding: 8px 16px;
+  background-color: #1a61b7;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.startup-button:hover {
+  background-color: #2d4a88;
+}
+
+/* Main content */
+.main-content {
+  padding: 40px 0;
+}
+/* Search Container */
+.search-container {
+  background-color: #051c42;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Search Title */
+.search-title {
+  font-size: 1.8rem; /* Smaller and more readable */
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Search Filters */
+.search-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+/* Filter Group */
+.filter-group {
+  flex: 1;
+  min-width: 200px;
+  text-align: left;
+}
+
+.filter-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: white;
+  font-size: 1rem;
+}
+
+.filter-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #1a61b7;
+  border-radius: 5px;
+  background-color: #0a255a;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Clear Filters Button */
+.clear-filters {
+  padding: 4px 10px; /* Slightly smaller */
+  font-size: 0.8rem; /* Reduce text size */
+  background-color: white;
+  color: #051c42;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  transition: all 0.2s ease-in-out;
+  height: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  margin-top: 5px; /* Reduce top spacing */
+}
+
+.clear-filters:hover {
+  background-color: #1a61b7;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+  justify-content: center;
+}
+
+.search-bar input {
+  flex: 1;
+  max-width: 500px;
+  padding: 12px 15px;
+  border: 1px solid #1a61b7;
+  border-radius: 5px;
+  background-color: #0a255a;
+  color: white;
+  font-size: 1rem;
+}
+
+.search-button {
+  padding: 12px 25px;
+  background-color: #1a61b7;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-button:hover {
+  background-color: #2d4a88;
+}
+
+/* Filter Tags */
+.filter-tags {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filter-tag {
+  padding: 8px 15px;
+  background-color: #0a255a;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.filter-tag:hover {
+  background-color: #1a61b7;
+}
+
+/* No Users Yet Message */
+.empty-state {
+  text-align: center;
+  padding: 30px 0;
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #000f30;
+  color: white;
+  padding: 3rem 2rem;
+  margin-top: 3rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+/* Branding Section */
+.footer-branding {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 300px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-container img {
+  width: 40px;
+  height: auto;
+  object-fit: contain;
+}
+
+.logo-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.footer-tagline {
+  color: #b0b0b0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+
+.social-icon:hover {
+  opacity: 0.8;
+}
+
+.social-icon img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+/* Footer Links Section */
+.footer-links {
+  display: flex;
+  gap: 4rem; /* Wide space between columns */
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+}
+
+.footer-heading {
+  color: #7C7C7C;
+  font-size: 1.125rem;
+  margin: 0 0 1rem 0; /* More space between heading and links */
+  font-weight: normal;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem; /* Reduced space between links */
+  padding-left: 0.5rem; /* Indent for links */
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 0.9rem;
+  padding: 0.15rem 0; /* Smaller vertical padding */
+  display: block;
+}
+
+.footer-nav a:hover {
+  color: #b0b0b0;
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .footer-branding {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+}

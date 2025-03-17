@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(180deg,#000F30 10.17%,#002065 36.17%,#0032A1 53.67%, #8099D0 81.17%,#FFFF 100%);
+}
+.terms-and-risks {
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.terms-and-risks-container {
+    margin: auto;
+    padding: 40px 20px;
+}
+.terms-and-risks-content h1 {
+    font-size: 50px ;
+    color: #ffffff;
+}
+.terms-and-risks-content {
+    padding: 20px;
+    border-radius : 10px;
+}
+.terms-and-risks-content h2 {
+    color:#ffffff;
+    font-size: 24px;
+}
+.terms-and-risks-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+}
