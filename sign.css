@@ -1,0 +1,64 @@
+body {
+    background: rgb(2, 16, 87);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }  
+  .sign-in-container .logo-part{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  .sign-in-container .logo-part a{
+    color: #e5e4ee;
+    font-size: 50px;
+  }
+
+.sign-in-container{
+    margin: 50px 70px 20px 400px;
+    background: linear-gradient(to bottom, #07107b, #cfdde7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    flex-direction: column;
+    padding: 25px;
+    border: 2px solid rgb(8, 8, 76);
+    border-radius: 25px;
+    width: 400px;
+}
+.sign-in-container .input-fields input{
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid rgb(6, 6, 123);
+}
+.sign-in-container .input-fields label{
+    display: flex;
+    margin: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.sign-in-container a{
+    text-decoration: none;
+<<<<<<< HEAD
+    color: #1d2a51;
+=======
+    color: #869ad8;
+>>>>>>> 31bac9db4ab2bfb0f91f89eace5bf2dff5df78e6
+    margin: 5px 10px 5px 5px;
+    font-size: 10px;
+}
+.sign-in-container .submit button{
+    border-radius: 20px;
+    border: 2px solid rgb(39, 39, 177);
+    width: 90px;
+    height: 40px;
+    margin: 20px 20px 30px 20px;
+    cursor: pointer;
+    background-color: rgb(3, 29, 66);
+    color: #e5e4ee;
+}
+.suggestion{
+    margin: 20px 20px 0px 29px;
+
+}

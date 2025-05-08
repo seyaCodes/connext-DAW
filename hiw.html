@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Con'next</title>
+    <style>
+        :root {
+            --primary-color: #1a61b7;
+            --secondary-color: #051c42;
+            --background-color: #0a255a;
+            --text-color: white;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Arial", sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(180deg, #000F30 10.17%, #002065 36.17%, #0032A1 53.67%, #8099D0 81.17%, #FFFFFF 100%);
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .header h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .header p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        
+        .tab-button {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            margin: 0 10px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+        
+        .tab-button.active {
+            background-color: var(--primary-color);
+            box-shadow: 0 4px 15px rgba(26, 97, 183, 0.4);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .step-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .step-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .step-number {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .step-card h3 {
+            font-size: 24px;
+            margin: 15px 0 15px 60px;
+        }
+        
+        .step-card p {
+            margin-top: 15px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .cta-section {
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .cta-button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .cta-button:hover {
+            background-color: #1050a0;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(26, 97, 183, 0.5);
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 36px;
+            }
+            
+            .step-card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>How It Works</h1>
+            <p>Connect, collaborate, and grow with Con'next - Algeria's premier platform for startup funding and investment opportunities.</p>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab('startups')">For Startups</button>
+            <button class="tab-button" onclick="openTab('investors')">For Investors</button>
+        </div>
+        
+        <div id="startups" class="tab-content active">
+            <div class="step-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Create Your Profile</h3>
+                    <p>Sign up and complete your startup profile with key details, including your industry, funding goals, vision, and what makes your company unique. A complete profile increases your visibility to the right investors.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Showcase Your Startup</h3>
+                    <p>Upload your pitch deck, financial details, and growth strategy to stand out. Our platform ensures your startup gets noticed by investors seeking opportunities in your specific industry and stage.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Connect With Investors</h3>
+                    <p>Receive notifications when investors express interest in your startup. Use our secure messaging system to communicate directly, answer questions, and schedule virtual or in-person meetings.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Secure Funding & Grow</h3>
+                    <p>Finalize investment deals with investors who believe in your vision. Use the funding and strategic support to scale your business and reach new milestones in the Algerian market and beyond.</p>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <a href="subscribe.html" class="cta-button">Join as a Startup</a>
+            </div>
+        </div>
+        
+        <div id="investors" class="tab-content">
+            <div class="step-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Create Investor Profile</h3>
+                    <p>Sign up and set up your investor profile with your investment preferences, industry focus, and investment capacity. Our platform uses this information to match you with relevant startup opportunities.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Discover Promising Startups</h3>
+                    <p>Browse through our curated selection of Algerian startups, filtering by industry, funding stage, and growth potential. Review detailed profiles, pitch decks, and financial projections to identify opportunities.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Connect & Evaluate</h3>
+                    <p>Express interest in startups that match your investment criteria. Use our secure communication tools to ask questions, schedule meetings, and conduct due diligence before making investment decisions.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Invest & Support Growth</h3>
+                    <p>Complete investment transactions securely through our platform. Maintain ongoing communication with your portfolio companies and leverage Con'next's resources to help your investments succeed.</p>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <a href="subscribe.html" class="cta-button">Join as an Investor</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            // Hide all tab contents
+            var tabContents = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+            
+            // Remove 'active' class from all tab buttons
+            var tabButtons = document.getElementsByClassName("tab-button");
+            for (var i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+            
+            // Show the selected tab content and mark its button as active
+            document.getElementById(tabName).classList.add("active");
+            event.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>

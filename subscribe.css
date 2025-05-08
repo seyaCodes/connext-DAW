@@ -1,0 +1,79 @@
+body {
+    background-color: #080045;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }  
+  .Subscribe-container .logo-part{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  .Subscribe-container .logo-part a{
+    color: #e5e4ee;
+    font-size: 50px;
+  }
+
+.Subscribe-container{
+    margin: 20px 70px 5px 350px;
+    background: linear-gradient(to bottom, #07107b, #cfdde7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 90vh;
+    flex-direction: column;
+    padding: 25px;
+    border: 2px solid rgb(8, 8, 76);
+    border-radius: 10px;
+    width: 500px;
+}
+.Subscribe-container .input-fields input{
+    width: 190px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid rgb(6, 6, 123);
+    width: 390px;
+    background-color: rgb(176, 186, 186);
+}
+.Subscribe-container .input-fields label{
+    display: flex;
+    margin: 5px;
+    color: #e5e4ee;
+}
+.Subscribe-container a{
+    text-decoration: none;
+    color: #67696d;
+    margin: 5px 10px 5px 5px;
+}
+.Subscribe-container .submit button{
+    border-radius: 30px;
+    border: 2px solid rgb(46, 63, 195);
+    width: 200px;
+    height: 40px;
+    margin: 20px 20px 10px 20px;
+    cursor: pointer;
+    background-color: rgb(8, 34, 103);
+    color: #e5e4ee;
+}
+.Subscribe-container .options label {
+    color: #0e2c41;
+    margin-right: 90px;
+}
+.Subscribe-container .options input{
+    margin-left: 20px;
+}
+
+.suggestion{
+    margin: 10px 20px 0px 29px;
+
+}
+.Subscribe-container .options{
+    margin-right: 20px;
+}
+.Subscribe-container .check{
+    display: flex;
+    flex-direction: row;
+}
+.Subscribe-container .check p{
+   color: rgb(14, 26, 54);
+}

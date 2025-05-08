@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../conext/imgs"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "profile"
+  }
+}
